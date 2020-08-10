@@ -589,7 +589,7 @@ body.fixed {
 		top: 0;
 		right: 0;
 		height: 100%;
-		background: #588ee0;
+		background: #16afe4;
 		transform: translateX(100%);
 		transition: transform .45s ease-in-out;
 		flex-direction: column;
@@ -601,10 +601,11 @@ body.fixed {
 	.navbar__item.mobile {
 		display: flex;
 		align-items: center;
-		background: #6a9ae3;
-		border-bottom: 2px solid #4d81d0;
-		box-shadow: inset 0 -1px 0 #588ee0;
+		background: #30b8e7;
+		border-bottom: 2px solid #169fcf;
+		box-shadow: inset 0 -1px 0 #16afe4;
 		height: 65px;
+		box-sizing: content-box;
 	}
 
 	.navbar__item.mobile .navbar__item__link {
@@ -639,7 +640,7 @@ body.fixed {
 	}
 	
 	.navbar__item__link:hover {
-		background: #6798e1;
+		background: rgba(255,255,255,0.08);
 	}
 
 	.navbar__item__link:before {
@@ -649,7 +650,7 @@ body.fixed {
 		left: 0;
 		height: 100%;
 		width: 3px;
-		background: #25eed6;
+		background: #fff;
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity .3s, visibility .3s;
