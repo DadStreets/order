@@ -1019,6 +1019,12 @@
 
 	.customer-review__card__videoplayer {
 		margin: 0 !important;
+		width: 80%;
+		max-width: 250px;
+	}
+	
+	.customer-review__card__videoplayer video {
+		width: 100%;
 	}
 
 	.customer-review__card .flex-row-group {
