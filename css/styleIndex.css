@@ -578,6 +578,12 @@
 
 .customer-review__card__videoplayer {
 	margin-right: 74px;
+	width: 80%;
+	max-width: 250px;
+}
+
+.customer-review__card__videoplayer video {
+	width: 100%;	
 }
 
 .customer-review__card:nth-of-type(even) .customer-review__card__videoplayer {
