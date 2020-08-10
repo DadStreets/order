@@ -1,17 +1,3 @@
-/*.layout-of-project {
-	z-index: 900;
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0.25;
-	overflow: hidden;
-}*/
-
-/*body {
-	overflow-x: hidden;
-}*/
-
-
 /*========================================*/
 /*  Intro Style  */
 .intro {
@@ -163,7 +149,7 @@
 /*  Similiar-Start Style  */
 .similiar-start {
 	padding: 24px 0 54px;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .similiar-start__inner {
@@ -198,7 +184,7 @@
 .global-platform {
 	padding: 54px 0 0;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .global-platform__inner {
@@ -676,7 +662,7 @@
 .wrapper-for-absolute {
 	position: relative;
 	min-height: 280px;
-	overflow-x: hidden;
+	overflow: hidden;
 	margin-top: 64px;
 }
 
@@ -995,6 +981,8 @@
 
 	.our-team__box {
 		flex-wrap: wrap;
+		justify-content: center;
+		
 	}
 
 	.our-team__collaborator-card {
@@ -1019,12 +1007,6 @@
 
 	.customer-review__card__videoplayer {
 		margin: 0 !important;
-		width: 80%;
-		max-width: 250px;
-	}
-	
-	.customer-review__card__videoplayer video {
-		width: 100%;
 	}
 
 	.customer-review__card .flex-row-group {
