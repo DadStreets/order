@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Main Page</title>
+	<title>Главная ADNous</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 	<!-- Подключения CSS -->
 	<link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
 	<link rel="stylesheet" href="css/styleAll.css">
 	<link rel="stylesheet" href="css/styleIndex.css">
+	<!-- Подключение Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
 </head>
 <body>
 	
@@ -27,27 +32,28 @@
 							<i class="navbar__item__link-icon mobile fas fa-user"></i>
 							Вход / регистрация
 						</a>
+						<i class="fas fa-times-circle"></i>
 					</li>
 					<li class="navbar__item">
-						<a href="#" class="navbar__item__link">
+						<a href="index.html" class="navbar__item__link">
 							<i class="navbar__item__link-icon mobile fas fa-th"></i>
 							О сервисе
 						</a>
 					</li>
 					<li class="navbar__item">
-						<a href="#" class="navbar__item__link">
+						<a href="pages/promotion-methods.html" class="navbar__item__link">
 							<i class="navbar__item__link-icon mobile fas fa-analytics"></i>
 							Варианты продвижения
 						</a>
 					</li>
 					<li class="navbar__item">
-						<a href="#" class="navbar__item__link">
+						<a href="pages/business-cases.html" class="navbar__item__link">
 							<i class="navbar__item__link-icon mobile fas fa-user-plus"></i>
 							Отзывы клиентов
 						</a>
 					</li>
 					<li class="navbar__item">
-						<a href="#" class="navbar__item__link">
+						<a href="pages/blog.html" class="navbar__item__link">
 							<i class="navbar__item__link-icon mobile fas fa-book"></i>
 							Блог
 						</a>
@@ -72,8 +78,8 @@
 					</div>
 				</div>
 				
-				<div class="burger">
-					<span></span>
+				<div class="burger mobile">
+					<i class="fal fa-bars"></i>
 				</div>
 			</div>
 
@@ -781,10 +787,10 @@
 							<a href="#" class="subfooter__menu__list__item__link">Наша история</a>
 						</li>
 						<li class="subfooter__menu__list__item">
-							<a href="#" class="subfooter__menu__list__item__link">Блог</a>
+							<a href="pages/blog.html" class="subfooter__menu__list__item__link">Блог</a>
 						</li>
 						<li class="subfooter__menu__list__item">
-							<a href="#" class="subfooter__menu__list__item__link">Контакты</a>
+							<a href="pages/contacts.html" class="subfooter__menu__list__item__link">Контакты</a>
 						</li>
 						<li class="subfooter__menu__list__item">
 							<a href="#" class="subfooter__menu__list__item__link">Реквизиты</a>
@@ -862,16 +868,7 @@
 		</div>
 	</footer>
 	
-	<script>
-		const burger = document.querySelector('.burger'),
-			  navMenu = document.querySelector('.navbar');
-
-		burger.addEventListener('click', () => {
-			burger.classList.toggle('active');
-			navMenu.classList.toggle('active');
-			document.body.classList.toggle('fixed');
-		})
-	</script>
+	<script src="js/header.js"></script>
 
 </body>
 </html>
