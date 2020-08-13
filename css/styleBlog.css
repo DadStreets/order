@@ -1,0 +1,80 @@
+.blog {
+	padding: 80px 0 37px;
+}
+
+.blog__box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.blog-box__link {
+	text-decoration: none;
+	color: #202020;
+}
+
+.blog-box__card {
+	width: 370px;
+	margin-bottom: 44px;
+}
+
+.blog-box-card__image {
+	border-radius: 6px;
+	width: 100%;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.blog-box-card__title {
+	font-weight: 700;
+	color: #202020;
+	font-size: 0.94rem;
+	text-decoration: none;
+}
+
+.column-hidden {
+	visibility: hidden;
+}
+
+.blog__page-swithcer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog-page-swithcer__switch {
+	min-width: 46px;
+	min-height: 46px;
+	border-radius: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.76rem;
+	color: #202020;
+	font-weight: 600;
+	margin: 0 9px;
+	background: #fff;
+	border: 1px solid #e4ecf2;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.blog-page-swithcer__switch.active {
+	background: #588ee0;
+	color: #fff;
+	border: none;
+}
+
+.blog-page-swithcer__switch.text-button {
+	padding: 0 2em;
+	text-transform: uppercase;
+}
+
+.blog-page-swithcer__switch .fa-angle-left {
+	margin-right: 17px;
+}
+
+.blog-page-swithcer__switch .fa-angle-right {
+	margin-left: 17px;
+}

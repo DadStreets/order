@@ -1,0 +1,138 @@
+.page-header__title {
+    margin: 34px 0 15px;
+}
+
+/*==============================*/
+/*  Business-Cases Style  */
+.business-case {
+	padding: 82px 0 70px;
+}
+
+.business-case:nth-child(odd) {
+	background: #fff;
+}
+
+.business-case:nth-child(even) {
+	background: #f5fbfd;
+}
+
+.business-case__inner {
+
+}
+
+.business-case__box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 43px;
+}
+
+.business-case__videoplayer {
+	width: 52%;
+	max-width: 596px;
+	margin-right: 100px;
+}
+
+.business-case-box__plaintext {
+	color: #5f5f5f;
+	font-size: 0.94rem;
+	line-height: 2;
+	padding: 38px 0 32px;
+}
+
+.section-button {
+
+}
+
+.fas {
+
+}
+
+.fa-caret-right {
+    margin-left: 15px;
+    font-size: 1.1em;
+    transform: scaleX(1.5);
+}
+
+.business-case__title {
+	color: #171717;
+	font-size: 1.6rem;
+	font-weight: 600;
+    margin-bottom: 33px;
+}
+
+.business-case__quote {
+	font-style: italic;
+	font-weight: 600;
+	color: #0093ff;
+	line-height: 1.5;
+	font-size: 1.25rem;
+	quotes: "\00ab" "\00bb";
+	position: relative;
+	letter-spacing: 0.06rem;
+}
+.quote-box {
+	padding-left: 108px;
+}
+
+.quote {
+	position: absolute;
+	top: 0;
+	left: -36px;
+	width: 1.2em;
+	height: 1.2em;
+	transform: translateX(-100%);
+	background: url('../images/quote.png') no-repeat;
+	background-position: center center;
+	background-size: contain;
+	letter-spacing: 0.06rem;
+}
+
+/*==============================*/
+/*  Adaptive Design  */
+
+/*  Tablets less a 1024px  */
+@media screen and (max-width: 1023px) {
+	.business-case__box {
+		flex-direction: column;
+	}
+
+	.business-case__videoplayer {
+		max-width: initial;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+
+/*  Smartphones less a 767px  */
+@media screen and (max-width: 767px) {
+	.business-case__videoplayer {
+		width: 100%;
+	}
+
+	.quote-box {
+		padding: 0;
+	}
+
+	.business-case__quote {
+		margin-left: 52px;
+		line-height: 1.75;
+		font-size: 0.94rem;
+		letter-spacing: 0.015rem;
+	}
+
+	.quote {
+		left: -22px;
+	}
+}
+
+/*  Smartphones width-screen equal 360 and less  */
+@media screen and (max-width: 424px) {
+	.business-case-box__plaintext {
+		line-height: 1.75;
+	}
+
+	.business-case__quote {
+		letter-spacing: 0.01rem;
+	}
+}

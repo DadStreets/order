@@ -1,4 +1,10 @@
 /*========================================*/
+/*  Header Style  */
+.header {
+	background: none;
+}
+
+/*========================================*/
 /*  Intro Style  */
 .intro {
 	background: #30c6fb;
@@ -21,6 +27,11 @@
 	bottom: 48px;
 	pointer-events: none;
 	width: 1045px;
+}
+
+.intro__logo::selection,
+.intro__picture::selection {
+	background: none;
 }
 
 .intro__inner {
@@ -582,13 +593,13 @@
 	max-width: 250px;
 }
 
-.customer-review__card__videoplayer video {
-	width: 100%;	
-}
-
 .customer-review__card:nth-of-type(even) .customer-review__card__videoplayer {
 	margin: 0;
 	margin-left: 74px;
+}
+
+.customer-review__card__videoplayer video {
+	width: 100%;
 }
 
 .customer-review__card__content {
@@ -819,6 +830,10 @@
 
 /*  Tablets less a 1024px  */
 @media screen and (max-width: 1023px) {
+	.header {
+		background: #16afe4;
+	}
+
 	.similiar-start__image img, .global-platform__image img {
 		width: 100%;
 		transform: none;
