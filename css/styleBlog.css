@@ -89,7 +89,7 @@
 	}
 	
 	.column-hidden {
-		display: block;	
+		display: none;	
 	}
 }
 
